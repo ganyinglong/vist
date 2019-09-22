@@ -9,16 +9,21 @@
         <artifactId>visit</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>visit-core-core</artifactId>
+    <artifactId>visit-core-jedisclient</artifactId>
+
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.nimbusds</groupId>
-            <artifactId>nimbus-jose-jwt</artifactId>
+            <groupId>com.gyl</groupId>
+            <artifactId>visit-core-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+
 </project>

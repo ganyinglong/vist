@@ -33,6 +33,15 @@
         <log4j-core.version>2.12.1</log4j-core.version>
         <log4j-api.version>2.12.1</log4j-api.version>
         <log4j-slf4j-impl.version>2.12.1</log4j-slf4j-impl.version>
+
+        <fastjson.version>1.2.60</fastjson.version>
+        <jedis.version>2.9.0</jedis.version>
+        <pagehelper.version>4.1.4</pagehelper.version>
+
+        <zxing.version>3.3.3</zxing.version>
+
+        <reflectasm.version>1.11.7</reflectasm.version>
+        <nimbus-jose-jwt.version>5.14</nimbus-jose-jwt.version>
     </properties>
 
     <dependencyManagement>
@@ -42,8 +51,42 @@
                 <artifactId>druid</artifactId>
                 <version>${druid.version}</version>
             </dependency>
-        </dependencies>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
 
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+
+            <!--分页插件-->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>${zxing.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>reflectasm</artifactId>
+                <version>${reflectasm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nimbusds</groupId>
+                <artifactId>nimbus-jose-jwt</artifactId>
+                <version>${nimbus-jose-jwt.version}</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
     <dependencies>
         <dependency>
@@ -121,13 +164,14 @@
 
     <repositories>
         <repository>
-            <id>wso</id>
-            <url>http://maven.wso2.org/nexus/content/groups/public/</url>
-        </repository>
-        <repository>
             <id>alirepo</id>
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </repository>
+        <!--        <repository>-->
+        <!--            <id>wso</id>-->
+        <!--            <url>http://maven.wso2.org/nexus/content/groups/public/</url>-->
+        <!--        </repository>-->
+
     </repositories>
 
 </project>
