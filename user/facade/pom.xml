@@ -10,7 +10,20 @@
     </parent>
     <artifactId>visit-user-facade</artifactId>
 
+    <dependencies>
 
+        <dependency>
+            <groupId>com.gyl</groupId>
+            <artifactId>visit-user-api</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gyl</groupId>
+            <artifactId>visit-user-biz</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 
 </project>

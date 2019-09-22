@@ -11,12 +11,8 @@
     <artifactId>visit-footprint-biz</artifactId>
 
 
-
     <dependencies>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
+
     </dependencies>
 
 </project>
