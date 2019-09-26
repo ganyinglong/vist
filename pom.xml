@@ -30,7 +30,7 @@
         <spring-boot-autoconfigure.version>2.1.8.RELEASE</spring-boot-autoconfigure.version>
 
         <slf4j-api.version>1.7.28</slf4j-api.version>
-        <log4j-core.version>2.12.1</log4j-core.version>
+        <log4j-core.version>2.11.2</log4j-core.version>
         <log4j-api.version>2.12.1</log4j-api.version>
         <log4j-slf4j-impl.version>2.12.1</log4j-slf4j-impl.version>
 
@@ -42,6 +42,9 @@
 
         <reflectasm.version>1.11.7</reflectasm.version>
         <nimbus-jose-jwt.version>5.14</nimbus-jose-jwt.version>
+
+        <mybatis.version>3.4.6</mybatis.version>
+        <mybatis-spring.version>2.0.1</mybatis-spring.version>
     </properties>
 
     <dependencyManagement>
@@ -85,6 +88,17 @@
                 <groupId>com.nimbusds</groupId>
                 <artifactId>nimbus-jose-jwt</artifactId>
                 <version>${nimbus-jose-jwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -143,6 +157,11 @@
             <version>${slf4j-api.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
 
     </dependencies>
 

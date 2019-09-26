@@ -3,7 +3,9 @@
 <!-- 配置LoggerConfig，即Appenders的日志级别为WARN -->
 <Configuration status="WARN">
     <Properties>
-        <property name="LOG_HOME">D:/logs/visit/footprint</property>
+        <property name="appName">${ctx:spring.application.name}</property>
+        <property name="logPath">${ctx:logging.path}</property>
+        <property name="LOG_HOME">${logPath}/${appName}</property>
         <property name="LOG_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%p] - %logger{100} - %m%n"/>
         <property name="maxFileSize">10 MB</property>
     </Properties>

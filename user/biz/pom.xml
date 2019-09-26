@@ -10,6 +10,13 @@
     </parent>
     <artifactId>visit-user-biz</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.gyl</groupId>
+            <artifactId>visit-user-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
 
 
 

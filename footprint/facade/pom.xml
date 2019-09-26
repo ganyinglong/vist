@@ -10,7 +10,19 @@
     </parent>
     <artifactId>visit-footprint-facade</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.gyl</groupId>
+            <artifactId>visit-footprint-biz</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
 
+        <dependency>
+            <groupId>com.gyl</groupId>
+            <artifactId>visit-footprint-api</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

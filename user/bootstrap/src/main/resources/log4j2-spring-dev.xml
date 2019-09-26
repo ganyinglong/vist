@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 配置LoggerConfig，即Appenders的日志级别为WARN -->
-<Configuration status="WARN">
+<Configuration status="WARN" scan="true" scanPeriod="60">
+
     <Properties>
+        <!--        <property name="appName" value="${ctx:spring.application.name}"/>-->
+        <!--        <property name="logPath" value="${ctx:logging.path}"></property>-->
+        <!--        <property name="LOG_HOME">${logPath}/${appName}</property>-->
         <property name="LOG_HOME" value="D:/logs/visit/user"/>
         <property name="LOG_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss:SSS}] [%p] - %logger{100} - %m%n"/>
         <property name="maxFileSize">10 MB</property>

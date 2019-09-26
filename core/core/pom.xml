@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.gyl</groupId>
-        <artifactId>visit</artifactId>
+        <artifactId>visit-core</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>visit-core-core</artifactId>

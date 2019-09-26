@@ -10,5 +10,28 @@
     </parent>
     <artifactId>visit-user-bootstrap</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.gyl</groupId>
+            <artifactId>visit-user-facade</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+        </dependency>
+    </dependencies>
 
+    <build>
+        <finalName>visit-user</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.gyl.visit.user.bootstrap.AppBootstrapApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
